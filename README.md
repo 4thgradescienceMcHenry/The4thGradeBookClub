@@ -147,7 +147,6 @@
 <main>
   <h1 class="title">READING <span class="y">QUEST</span></h1>
   <p class="tagline">Read books. Earn XP. Climb the leaderboard! <span class="blink">▮</span></p>
-  <div class="notice hidden" id="preview">Preview mode: this site is not connected to the Reading Quest sheet yet. Sign in with any ID and name to try it with sample readers. (Teacher: add your Web App URL in index.html.)</div>
 
   <!-- ===== Sign in ===== -->
   <section id="loginView">
@@ -234,7 +233,7 @@
     </div>
   </section>
 
-  <footer>Only first names and last initials are shown. Have fun reading!</footer>
+  <footer>Happy reading!</footer>
 </main>
 
 <div class="levelup" id="levelup"><span>LEVEL UP!</span></div>
@@ -249,7 +248,6 @@
   const starStr = (n) => "★".repeat(n) + "☆".repeat(5 - n);
   let session = null, data = null, stars = 0, tab = "All", MIN_SENT = 3, GOAL = 15;
   const preview = !WEB_APP_URL;
-  if (preview) $("preview").classList.remove("hidden");
 
   /* ---------- Pixel world background ---------- */
   const PAL = {
